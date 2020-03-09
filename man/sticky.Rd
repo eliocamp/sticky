@@ -20,8 +20,6 @@ sticky_all(x)
 }
 \arguments{
 \item{x}{objects to have attributes preserved.}
-
-\item{...}{Additional arguments passed to subsequent method(s)}
 }
 \description{
 Persist Attributes

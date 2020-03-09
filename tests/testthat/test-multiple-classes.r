@@ -3,11 +3,8 @@ source('utils.r')
 
 context( "Additional Classes")
 test_that( "Additional Classes", {
-
   x <- rnorm(5)
-  x %<>% base.tools::append_class( "something")
+  class(x) <- c("something", class(x))
   x %<>% sticky()
-
-  x %>% class %>% testthat::equals( c('sticky', 'something', 'numeric' ) )
-
+  x %>% class %>% expect_equal( c('sticky', 'something', 'numeric' ) )
 })

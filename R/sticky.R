@@ -4,7 +4,7 @@
 #' Persist Attributes
 #'
 #' @param x objects to have attributes preserved.
-#' @param ... Additional arguments passed to subsequent method(s)
+# #' @param ... Additional arguments passed to subsequent method(s)
 #'
 #' @details
 #' \code{sticky} creates objects whose attributes are resilent to subsetting and
